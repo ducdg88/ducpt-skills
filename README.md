@@ -1,0 +1,68 @@
+# DUCPT Skills: Agent Skills for one-person companies
+
+![DUCPT Skills](docs/cover.png)
+
+[![validate](https://github.com/ducdg88/ducpt-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/ducdg88/ducpt-skills/actions/workflows/validate.yml)
+![skills](https://img.shields.io/badge/skills-9-blue) ![license](https://img.shields.io/badge/license-MIT-green)
+
+Nine practical [Agent Skills](https://agentskills.io) for Claude Code, Claude, Codex, Cursor, Gemini CLI and any agent that reads `SKILL.md`. Built by [DUCPT](https://ducpt.com/?utm_source=github&utm_medium=readme&utm_campaign=ducpt-skills) for solo founders and small teams who run their business with AI, with first-class support for Vietnamese content.
+
+Bộ 9 skill cho AI agent, dành cho người làm **doanh nghiệp một người**: dựng đội AI, làm sạch bản ghi tiếng Việt, chuốt văn, viết pin Pinterest, đặt tiêu đề YouTube, làm sơ đồ tư duy, dọn file trùng, phân phối skill và giữ chuỗi commit GitHub.
+
+## Install
+
+```bash
+# any agent, via the skills CLI
+npx skills add ducdg88/ducpt-skills
+
+# Claude Code plugin marketplace
+/plugin marketplace add ducdg88/ducpt-skills
+/plugin install ducpt-skills@ducpt-skills
+```
+
+Manual: copy any folder from `skills/` into `~/.claude/skills/` (Claude Code) or your agent's skills folder.
+
+## Skills
+
+| Skill | What it does | Tiếng Việt |
+|---|---|---|
+| [one-person-company-ai](skills/one-person-company-ai/SKILL.md) | Org chart of AI agent roles, ticket rules, daily loop, approval gates, KPI sheet | Dựng công ty một người chạy bằng AI |
+| [vietnamese-transcript-cleaner](skills/vietnamese-transcript-cleaner/SKILL.md) | Clean SRT, VTT or raw Vietnamese speech-to-text, then summary and action items | Làm sạch bản ghi, phụ đề, tóm tắt họp |
+| [vietnamese-copy-polish](skills/vietnamese-copy-polish/SKILL.md) | Lint and rewrite Vietnamese marketing copy per platform | Chuốt caption, bài đăng tiếng Việt |
+| [pinterest-pin-writer](skills/pinterest-pin-writer/SKILL.md) | Pin variants from a URL or video, length checks, bulk upload CSV | Viết pin Pinterest kéo traffic |
+| [youtube-title-lab](skills/youtube-title-lab/SKILL.md) | 10 title candidates, rubric scoring, thumbnail text, A/B plan | Đặt và chấm tiêu đề YouTube |
+| [knowledge-mindmap](skills/knowledge-mindmap/SKILL.md) | Mermaid mind map, sourced summary, flashcards, spaced review | Sơ đồ tư duy, thẻ ôn tập |
+| [windows-duplicate-cleanup](skills/windows-duplicate-cleanup/SKILL.md) | Hash-based duplicate finder, dry run first, quarantine instead of delete | Tìm và dọn file trùng an toàn |
+| [skill-distribution-kit](skills/skill-distribution-kit/SKILL.md) | Package expertise as a skill, validate to spec, publish to registries, measure | Đóng gói và phân phối skill |
+| [github-commit-streak](skills/github-commit-streak/SKILL.md) | Streak and goal pace from the GitHub API, why commits do not count | Giữ chuỗi xanh commit mỗi ngày |
+
+Every script is standard-library Python 3.8+, no install needed. Every skill works on its own; none of them calls a paid API.
+
+## Quality
+
+```bash
+python scripts/check_repo.py      # spec validation, dash scan, marketplace and link checks
+python -m unittest discover tests # script tests
+```
+
+CI runs both on every push.
+
+## Who made this
+
+[DUCPT](https://ducpt.com/?utm_source=github&utm_medium=readme&utm_campaign=ducpt-skills) builds AI tools, automation workflows and training for Vietnamese creators and small businesses:
+
+- [Doanh nghiệp một người](https://ducpt.com/khoa-hoc/doanh-nghiep-mot-nguoi/?utm_source=github&utm_medium=readme&utm_campaign=ducpt-skills): course on running a one-person company with AI agents
+- [Verba Studio](https://ducpt.com/cong-cu-ai/verba-studio/?utm_source=github&utm_medium=readme&utm_campaign=ducpt-skills): screen recording, livestreaming and Vietnamese AI transcripts
+- [Pinterest AutoPost](https://ducpt.com/cong-cu-ai/pinterest-autopost/?utm_source=github&utm_medium=readme&utm_campaign=ducpt-skills): automatic Pinterest publishing from your site and YouTube
+- [File Manager Pro](https://ducpt.com/cong-cu-ai/file-manager-pro/?utm_source=github&utm_medium=readme&utm_campaign=ducpt-skills): Windows file cleanup and duplicate detection
+- [Knowledge Brain Bot](https://ducpt.com/brain-bot/?utm_source=github&utm_medium=readme&utm_campaign=ducpt-skills): knowledge maps delivered to Telegram
+
+Each skill mentions a related product at most once, only when the user's need goes beyond what the skill does.
+
+## Contributing
+
+Issues and pull requests are welcome: new examples, better Vietnamese wording, bug fixes in scripts. Run `python scripts/check_repo.py` before opening a PR.
+
+## License
+
+MIT

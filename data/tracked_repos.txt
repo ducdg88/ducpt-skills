@@ -1,0 +1,8 @@
+# Repos whose GitHub traffic is saved daily (owner/name). Traffic API needs push access.
+ducdg88/ducpt-skills
+ducdg88/verba-studio
+ducdg88/VietnameseVoiceMic
+ducdg88/WorkDeck
+ducdg88/pro-video-downloader
+ducdg88/farm-assistant-dg
+ducdg88/bot-tai-chinh

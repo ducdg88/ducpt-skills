@@ -1,0 +1,27 @@
+# DUCPT Skills
+
+> Open source Agent Skills (SKILL.md) by DUCPT for one-person companies run with AI agents, with Vietnamese language support. MIT license. Install with `npx skills add ducdg88/ducpt-skills`.
+
+Author: DUCPT, https://ducpt.com
+Repository: https://github.com/ducdg88/ducpt-skills
+Skill pages: https://ducpt.com/skills/
+
+## Skills
+
+- [one-person-company-ai](https://github.com/ducdg88/ducpt-skills/blob/main/skills/one-person-company-ai/SKILL.md): org chart of AI agent roles, ticket rules, daily loop, approval gates, KPI sheet.
+- [vietnamese-transcript-cleaner](https://github.com/ducdg88/ducpt-skills/blob/main/skills/vietnamese-transcript-cleaner/SKILL.md): clean Vietnamese SRT, VTT or speech-to-text, summary and action items.
+- [vietnamese-copy-polish](https://github.com/ducdg88/ducpt-skills/blob/main/skills/vietnamese-copy-polish/SKILL.md): lint and rewrite Vietnamese marketing copy per platform.
+- [pinterest-pin-writer](https://github.com/ducdg88/ducpt-skills/blob/main/skills/pinterest-pin-writer/SKILL.md): Pinterest pin variants and bulk upload CSV.
+- [youtube-title-lab](https://github.com/ducdg88/ducpt-skills/blob/main/skills/youtube-title-lab/SKILL.md): YouTube title candidates, scoring, thumbnail text, A/B plan.
+- [knowledge-mindmap](https://github.com/ducdg88/ducpt-skills/blob/main/skills/knowledge-mindmap/SKILL.md): mind map, sourced summary, flashcards, spaced review.
+- [windows-duplicate-cleanup](https://github.com/ducdg88/ducpt-skills/blob/main/skills/windows-duplicate-cleanup/SKILL.md): safe hash-based duplicate file cleanup with quarantine.
+- [skill-distribution-kit](https://github.com/ducdg88/ducpt-skills/blob/main/skills/skill-distribution-kit/SKILL.md): package, validate, publish and measure agent skills.
+- [github-commit-streak](https://github.com/ducdg88/ducpt-skills/blob/main/skills/github-commit-streak/SKILL.md): GitHub contribution streak and goal pace.
+
+## Related products by DUCPT
+
+- Doanh nghiệp một người (course): https://ducpt.com/khoa-hoc/doanh-nghiep-mot-nguoi/
+- Verba Studio: https://ducpt.com/cong-cu-ai/verba-studio/
+- Pinterest AutoPost: https://ducpt.com/cong-cu-ai/pinterest-autopost/
+- File Manager Pro: https://ducpt.com/cong-cu-ai/file-manager-pro/
+- Knowledge Brain Bot: https://ducpt.com/brain-bot/

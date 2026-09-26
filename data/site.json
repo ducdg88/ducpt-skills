@@ -1,0 +1,143 @@
+{
+  "repo": "ducdg88/ducpt-skills",
+  "og_image": "https://ducpt.com/assets/blog/ducpt-skills-cover.png",
+  "products": {
+    "course": {
+      "name": "Khóa học Doanh nghiệp một người",
+      "url": "https://ducpt.com/khoa-hoc/doanh-nghiep-mot-nguoi/",
+      "pitch": "Học dựng công ty một người vận hành bằng AI agent, có 2 bài miễn phí."
+    },
+    "verba": {
+      "name": "Verba Studio",
+      "url": "https://ducpt.com/cong-cu-ai/verba-studio/",
+      "pitch": "Quay màn hình, livestream đa nền tảng và bóc lời tiếng Việt bằng AI trong một ứng dụng."
+    },
+    "pinterest": {
+      "name": "Pinterest AutoPost",
+      "url": "https://ducpt.com/cong-cu-ai/pinterest-autopost/",
+      "pitch": "Tự tạo và đăng pin mỗi ngày từ website và kênh YouTube của bạn."
+    },
+    "filemanager": {
+      "name": "File Manager Pro",
+      "url": "https://ducpt.com/cong-cu-ai/file-manager-pro/",
+      "pitch": "Ứng dụng Windows dọn file trùng, đổi tên hàng loạt và sắp xếp thư mục bằng vài cú bấm."
+    },
+    "brainbot": {
+      "name": "Knowledge Brain Bot",
+      "url": "https://ducpt.com/brain-bot/",
+      "pitch": "Tự gom kiến thức, vẽ sơ đồ tư duy và gửi về Telegram."
+    },
+    "services": {
+      "name": "Dịch vụ và đào tạo DUCPT",
+      "url": "https://ducpt.com/dich-vu/",
+      "pitch": "Dựng hệ nội dung, video và website chạy bằng AI agent cho doanh nghiệp nhỏ."
+    }
+  },
+  "skills": {
+    "one-person-company-ai": {
+      "title": "Dựng công ty một người chạy bằng AI",
+      "summary": "Biến việc lặp lại hằng tuần thành sơ đồ vai trò AI agent, luật phiếu việc, vòng làm việc mỗi ngày, cổng duyệt và bảng KPI. Founder chỉ còn việc duyệt.",
+      "product": "course",
+      "steps_vi": [
+        "Phỏng vấn nhanh tối đa 5 câu",
+        "Vẽ sơ đồ vai trò AI agent",
+        "Đặt luật phiếu việc có ô bằng chứng",
+        "Vòng làm việc mỗi ngày",
+        "Cổng duyệt của Founder",
+        "Bàn giao: sơ đồ, 5 phiếu mẫu, lịch, cổng duyệt, bảng KPI"
+      ]
+    },
+    "vietnamese-transcript-cleaner": {
+      "title": "Làm sạch bản ghi và phụ đề tiếng Việt",
+      "summary": "Gộp file SRT, VTT hoặc bản chép lời tự động thành đoạn văn dễ đọc, khôi phục dấu, thêm dấu câu, gắn người nói, rồi tóm tắt quyết định và việc cần làm.",
+      "product": "verba",
+      "steps_vi": [
+        "Chuẩn hoá file SRT hoặc VTT bằng script",
+        "Làm sạch ngôn ngữ: dấu, dấu câu, từ đệm, tên riêng",
+        "Gắn người nói",
+        "Xuất bản ghi sạch kèm tóm tắt, quyết định, việc cần làm"
+      ]
+    },
+    "vietnamese-copy-polish": {
+      "title": "Chuốt văn tiếng Việt cho từng nền tảng",
+      "summary": "Soát bài đăng bằng script: dấu gạch dài, câu quá dài, thiếu dấu, thiếu lời kêu gọi, độ dài theo nền tảng. Sau đó viết lại cho tự nhiên như người Việt viết.",
+      "product": "services",
+      "steps_vi": [
+        "Soát lỗi bằng script",
+        "Viết lại theo 7 luật văn tiếng Việt",
+        "Trả bản mới kèm kết quả soát lại"
+      ]
+    },
+    "pinterest-pin-writer": {
+      "title": "Viết pin Pinterest kéo traffic",
+      "summary": "Từ một bài viết hoặc video, tạo 5 phiên bản pin có từ khóa, mô tả, alt text, lịch đăng, kiểm tra giới hạn độ dài và xuất file CSV đăng hàng loạt.",
+      "product": "pinterest",
+      "steps_vi": [
+        "Lấy nội dung nguồn",
+        "Chọn từ khoá Pinterest",
+        "Viết 5 phiên bản pin",
+        "Lên lịch đăng",
+        "Kiểm tra độ dài và xuất CSV đăng hàng loạt"
+      ]
+    },
+    "youtube-title-lab": {
+      "title": "Đặt và chấm điểm tiêu đề YouTube",
+      "summary": "Viết 10 tiêu đề theo 5 góc, chấm điểm bằng thang minh bạch, ghép chữ thumbnail không lặp tiêu đề và lên kế hoạch A/B test.",
+      "product": "course",
+      "steps_vi": [
+        "Thu thập đầu vào",
+        "Viết 10 tiêu đề theo 5 góc",
+        "Chấm điểm bằng script",
+        "Viết chữ thumbnail",
+        "Lên kế hoạch A/B test"
+      ]
+    },
+    "knowledge-mindmap": {
+      "title": "Sơ đồ tư duy và thẻ ôn tập",
+      "summary": "Biến bài giảng, video hay ghi chú dài thành sơ đồ Mermaid, bản tóm tắt có nguồn, thẻ hỏi đáp nhập được vào Anki và lịch ôn giãn cách.",
+      "product": "brainbot",
+      "steps_vi": [
+        "Đọc và bóc ý có nguồn",
+        "Vẽ sơ đồ tư duy Mermaid",
+        "Tóm tắt một trang",
+        "Tạo thẻ hỏi đáp",
+        "Lịch ôn giãn cách"
+      ]
+    },
+    "windows-duplicate-cleanup": {
+      "title": "Tìm và dọn file trùng an toàn",
+      "summary": "So file theo dung lượng rồi mã băm SHA-256, báo dung lượng lãng phí, chạy thử trước, và chuyển bản thừa vào thư mục cách ly thay vì xoá. Có nhật ký để hoàn tác.",
+      "product": "filemanager",
+      "steps_vi": [
+        "Chọn đúng thư mục cần quét",
+        "Chạy thử, chỉ báo cáo",
+        "Chọn bản giữ lại theo luật rõ ràng",
+        "Chuyển bản thừa vào thư mục cách ly sau khi bạn đồng ý"
+      ]
+    },
+    "skill-distribution-kit": {
+      "title": "Đóng gói và phân phối skill",
+      "summary": "Đóng gói chuyên môn thành Agent Skill đúng chuẩn agentskills.io, kiểm tra tự động, viết README dễ tìm, nộp lên các chợ skill và đo traffic mỗi ngày.",
+      "product": "course",
+      "steps_vi": [
+        "Chọn skill đáng chia sẻ",
+        "Đóng gói đúng chuẩn và kiểm tra",
+        "Gắn link sản phẩm trung thực",
+        "Làm repo dễ tìm",
+        "Phân phối theo thứ tự cửa",
+        "Đo traffic hằng tuần"
+      ]
+    },
+    "github-commit-streak": {
+      "title": "Giữ chuỗi xanh commit GitHub",
+      "summary": "Đo chuỗi ngày có đóng góp, tốc độ cần để đạt mục tiêu như 10.000 contribution, và tìm lý do commit không lên ô xanh. Không tạo commit rỗng.",
+      "product": "course",
+      "steps_vi": [
+        "Đo chuỗi và tốc độ",
+        "Tìm lý do commit không lên ô xanh",
+        "Kế hoạch chuỗi bằng việc thật",
+        "Giữ chuỗi mỗi ngày"
+      ]
+    }
+  }
+}
