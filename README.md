@@ -2,7 +2,6 @@
 
 ![DUCPT Skills](docs/cover.png)
 
-[![validate](https://github.com/ducdg88/ducpt-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/ducdg88/ducpt-skills/actions/workflows/validate.yml)
 ![skills](https://img.shields.io/badge/skills-9-blue) ![license](https://img.shields.io/badge/license-MIT-green)
 
 Nine practical [Agent Skills](https://agentskills.io) for Claude Code, Claude, Codex, Cursor, Gemini CLI and any agent that reads `SKILL.md`. Built by [DUCPT](https://ducpt.com/?utm_source=github&utm_medium=readme&utm_campaign=ducpt-skills) for solo founders and small teams who run their business with AI, with first-class support for Vietnamese content.
@@ -45,7 +44,7 @@ python scripts/check_repo.py      # spec validation, dash scan, marketplace and 
 python -m unittest discover tests # script tests
 ```
 
-CI runs both on every push.
+A GitHub Actions workflow that runs both is ready in `docs/ci/validate.yml`; copy it to `.github/workflows/` to enable CI.
 
 ## Who made this
 
