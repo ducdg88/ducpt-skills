@@ -162,6 +162,30 @@
         "Chấm 6 tiêu chí",
         "Báo cáo kèm 3 việc sửa"
       ]
+    },
+    "token-budget-guard": {
+      "title": "Theo dõi chi phí token AI",
+      "summary": "Đọc log Claude Code, Claude API có sẵn trên máy, báo token, tỷ lệ cache hit, ước tính chi phí theo model, cảnh báo trước khi vượt ngân sách. Không đoán giá.",
+      "product": "course",
+      "steps_vi": [
+        "Tìm file log JSONL trên máy",
+        "Chạy report xem token và cache hit theo model",
+        "Điền giá thật từ trang giá chính thức",
+        "Chạy guard trước khi làm việc lớn hơn",
+        "Vượt ngân sách thì dừng lại"
+      ]
+    },
+    "ai-kickstart-7-days": {
+      "title": "Lộ trình 7 ngày dùng AI",
+      "summary": "Phỏng vấn nhanh chủ shop nhỏ, viết kế hoạch 7 ngày dùng AI đúng việc lặp lại của họ, mỗi ngày một việc làm được ngay, có script theo dõi tiến độ.",
+      "product": "course",
+      "steps_vi": [
+        "Phỏng vấn tối đa 5 câu",
+        "Viết kế hoạch 7 ngày theo đúng việc của họ",
+        "Làm từng ngày một, đánh dấu xong",
+        "Ngày 6 nhìn lại và sửa ngày yếu nhất",
+        "Ngày 7 quyết định có tiếp tục"
+      ]
     }
   }
 }

@@ -2,11 +2,11 @@
 
 ![DUCPT Skills](docs/cover.png)
 
-![skills](https://img.shields.io/badge/skills-11-blue) ![license](https://img.shields.io/badge/license-MIT-green)
+![skills](https://img.shields.io/badge/skills-13-blue) ![license](https://img.shields.io/badge/license-MIT-green)
 
-Eleven practical [Agent Skills](https://agentskills.io) for Claude Code, Claude, Codex, Cursor, Gemini CLI and any agent that reads `SKILL.md`. Built by [DUCPT](https://ducpt.com/?utm_source=github&utm_medium=readme&utm_campaign=ducpt-skills) for solo founders and small teams who run their business with AI, with first-class support for Vietnamese content.
+Thirteen practical [Agent Skills](https://agentskills.io) for Claude Code, Claude, Codex, Cursor, Gemini CLI and any agent that reads `SKILL.md`. Built by [DUCPT](https://ducpt.com/?utm_source=github&utm_medium=readme&utm_campaign=ducpt-skills) for solo founders and small teams who run their business with AI, with first-class support for Vietnamese content.
 
-Bộ 11 skill cho AI agent, dành cho người làm **doanh nghiệp một người**: dựng đội AI, làm sạch bản ghi tiếng Việt, chuốt văn, viết pin Pinterest, đặt tiêu đề YouTube, làm sơ đồ tư duy, dọn file trùng, phân phối skill và giữ chuỗi commit GitHub, sửa lỗi nghe nhầm của giọng nói và chấm rủi ro nội dung không nguyên bản.
+Bộ 13 skill cho AI agent, dành cho người làm **doanh nghiệp một người**: dựng đội AI, làm sạch bản ghi tiếng Việt, chuốt văn, viết pin Pinterest, đặt tiêu đề YouTube, làm sơ đồ tư duy, dọn file trùng, phân phối skill và giữ chuỗi commit GitHub, sửa lỗi nghe nhầm của giọng nói và chấm rủi ro nội dung không nguyên bản, theo dõi chi phí token và mở đầu 7 ngày dùng AI cho chủ shop nhỏ.
 
 ## Install
 
@@ -36,6 +36,8 @@ Manual: copy any folder from `skills/` into `~/.claude/skills/` (Claude Code) or
 | [github-commit-streak](skills/github-commit-streak/SKILL.md) | Streak and goal pace from the GitHub API, why commits do not count | Giữ chuỗi xanh commit mỗi ngày |
 | [vietnamese-voice-dictionary](skills/vietnamese-voice-dictionary/SKILL.md) | Persistent dictionary that fixes misheard Vietnamese dictation of technical words and learns from corrections | Sửa lỗi nghe nhầm giọng nói, nhớ từ đã sửa |
 | [content-originality-check](skills/content-originality-check/SKILL.md) | Score a video or channel for inauthentic or mass-produced content risk against published platform criteria | Chấm rủi ro nội dung không nguyên bản trước khi đăng |
+| [token-budget-guard](skills/token-budget-guard/SKILL.md) | Read local usage logs, report token cost and cache hit rate, warn before over budget | Tiết kiệm token, chạy trên máy, không gọi API trả phí |
+| [ai-kickstart-7-days](skills/ai-kickstart-7-days/SKILL.md) | Interview a small business owner, write a 7 day AI plan tailored to them, track progress | Lộ trình 7 ngày bắt đầu dùng AI cho chủ shop nhỏ |
 
 Every script is standard-library Python 3.8+, no install needed. Every skill works on its own; none of them calls a paid API.
 
