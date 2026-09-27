@@ -12,5 +12,19 @@
     "today": 1,
     "user": "ducdg88",
     "zero_days_last_30": 25
+  },
+  "2026-09-27": {
+    "avg_per_day": 0.4,
+    "current_streak": 4,
+    "date": "2026-09-27",
+    "goal": 10000,
+    "goal_date": "2027-09-27",
+    "last_year_total": 152,
+    "longest_streak": 5,
+    "needed_per_day": 27.0,
+    "private_hidden": 0,
+    "today": 40,
+    "user": "ducdg88",
+    "zero_days_last_30": 25
   }
 }
