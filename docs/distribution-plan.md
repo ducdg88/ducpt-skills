@@ -32,3 +32,4 @@ Tính đến 26/09/2026: 101 contribution trong 365 ngày, chuỗi hiện tại 
 - Mỗi skill nhắc sản phẩm tối đa một lần, chỉ khi phù hợp.
 - Không đưa nội dung khóa học của người khác vào skill công khai.
 - Mọi link ra ngoài gắn `utm_source`.
+- Không đặt link tới trang chưa chạy. Thứ tự đúng: deploy trang lên ducpt.com trước, rồi mới gắn link ở GitHub (homepage của repo, README, hồ sơ). Trước khi công khai repo hoặc đổi homepage, chạy `python scripts/check_repo.py --online` (kiểm cả homepage trong Settings) và tự bấm thử từng link. Chưa deploy xong thì để homepage trỏ trang đang chạy, ví dụ https://ducpt.com.

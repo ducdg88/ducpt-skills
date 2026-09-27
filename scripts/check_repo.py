@@ -8,11 +8,15 @@ Checks: every skill passes the agentskills.io validator, no en or em dash in any
 text file, marketplace.json lists exactly the skill folders, README and llms.txt
 mention every skill, each skill has one "Going further" product link whose
 utm_campaign equals the skill name. With --online, every ducpt.com URL must
-answer HTTP 200. Exit code 1 on any failure.
+answer HTTP 200, and so must the homepage set in the GitHub repo settings (it
+lives outside the files, so nothing else would catch a dead link there).
+Never link to a page before it is live: run this with --online before making a
+repo public or changing its homepage. Exit code 1 on any failure.
 """
 import json
 import os
 import re
+import subprocess
 import sys
 import urllib.request
 
@@ -22,7 +26,18 @@ from validate_skill import find_skills, validate_skill  # noqa: E402
 
 TEXT_EXT = {".md", ".py", ".json", ".txt", ".yml", ".yaml", ".html", ".csv"}
 DASHES = (chr(0x2013), chr(0x2014))
-URL_RE = re.compile(r"https://ducpt\.com[^\s)\"'<>`]*")
+URL_RE = re.compile(r"https://ducpt\.com[^\s)\"'<>`\\]*")
+TEMPLATE_RE = re.compile(r"[%{}]")  # format placeholders in code, not real links
+
+
+def repo_homepage():
+    """Homepage from the GitHub repo settings, or '' when gh is missing or not logged in."""
+    try:
+        out = subprocess.run(["gh", "repo", "view", "--json", "homepageUrl", "-q", ".homepageUrl"],
+                             cwd=ROOT, capture_output=True, text=True, timeout=30)
+        return out.stdout.strip() if out.returncode == 0 else ""
+    except (OSError, subprocess.SubprocessError):
+        return ""
 
 
 def rel(p):
@@ -56,7 +71,7 @@ def main(argv):
         for n, line in enumerate(body.splitlines(), 1):
             if any(d in line for d in DASHES):
                 failures.append(f"{rel(path)}:{n}: en or em dash (use comma, colon or full stop)")
-        urls.update(u.rstrip(".,") for u in URL_RE.findall(body))
+        urls.update(u.rstrip(".,") for u in URL_RE.findall(body) if not TEMPLATE_RE.search(u))
 
     with open(os.path.join(ROOT, ".claude-plugin", "marketplace.json"), encoding="utf-8") as fh:
         market = json.load(fh)
@@ -84,6 +99,12 @@ def main(argv):
             failures.append(f"{name}: product section must say 'at most once'")
 
     if online:
+        homepage = repo_homepage()
+        if homepage.startswith("http"):
+            print(f"  repo homepage (GitHub settings): {homepage}")
+            urls.add(homepage)
+        elif homepage == "":
+            print("  repo homepage not checked (gh missing, not logged in, or no homepage set)")
         for url in sorted(urls):
             try:
                 req = urllib.request.Request(url, headers={"User-Agent": "ducpt-skills-check/1.0"})
