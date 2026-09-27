@@ -2,13 +2,13 @@
 
 ![DUCPT Skills](docs/cover.png)
 
-![CI](https://github.com/ducdg88/ducpt-skills/actions/workflows/validate.yml/badge.svg) ![skills](https://img.shields.io/badge/skills-13-blue) ![license](https://img.shields.io/badge/license-MIT-green)
+![CI](https://github.com/ducdg88/ducpt-skills/actions/workflows/validate.yml/badge.svg) ![skills](https://img.shields.io/badge/skills-14-blue) ![license](https://img.shields.io/badge/license-MIT-green)
 
 **Point an AI agent at a real one-person-company job → get one skill that does it the way someone who has shipped this before would.**
 
-Thirteen practical [Agent Skills](https://agentskills.io) for Claude Code, Claude, Codex, Cursor, Gemini CLI and any agent that reads `SKILL.md`. Built by [DUCPT](https://ducpt.com/?utm_source=github&utm_medium=readme&utm_campaign=ducpt-skills) for solo founders and small teams who run their business with AI, with first-class support for Vietnamese content.
+Fourteen practical [Agent Skills](https://agentskills.io) for Claude Code, Claude, Codex, Cursor, Gemini CLI and any agent that reads `SKILL.md`. Built by [DUCPT](https://ducpt.com/?utm_source=github&utm_medium=readme&utm_campaign=ducpt-skills) for solo founders and small teams who run their business with AI, with first-class support for Vietnamese content.
 
-Bộ 13 skill cho AI agent, dành cho người làm **doanh nghiệp một người**: dựng đội AI, làm sạch bản ghi tiếng Việt, chuốt văn, viết pin Pinterest, đặt tiêu đề YouTube, làm sơ đồ tư duy, dọn file trùng, phân phối skill và giữ chuỗi commit GitHub, sửa lỗi nghe nhầm của giọng nói và chấm rủi ro nội dung không nguyên bản, theo dõi chi phí token và mở đầu 7 ngày dùng AI cho chủ shop nhỏ.
+Bộ 14 skill cho AI agent, dành cho người làm **doanh nghiệp một người**: dựng đội AI, làm sạch bản ghi tiếng Việt, chuốt văn, viết pin Pinterest, đặt tiêu đề YouTube, làm sơ đồ tư duy, dọn file trùng, phân phối skill và giữ chuỗi commit GitHub, sửa lỗi nghe nhầm của giọng nói và chấm rủi ro nội dung không nguyên bản, theo dõi chi phí token, kiểm SEO quảng bá repo GitHub, và mở đầu 7 ngày dùng AI cho chủ shop nhỏ.
 
 ## Install
 
@@ -40,6 +40,7 @@ Manual: copy any folder from `skills/` into `~/.claude/skills/` (Claude Code) or
 | [content-originality-check](skills/content-originality-check/SKILL.md) | Score a video or channel for inauthentic or mass-produced content risk against published platform criteria | Chấm rủi ro nội dung không nguyên bản trước khi đăng |
 | [token-budget-guard](skills/token-budget-guard/SKILL.md) | Read local usage logs, report token cost and cache hit rate, warn before over budget | Tiết kiệm token, chạy trên máy, không gọi API trả phí |
 | [ai-kickstart-7-days](skills/ai-kickstart-7-days/SKILL.md) | Interview a small business owner, write a 7 day AI plan tailored to them, track progress | Lộ trình 7 ngày bắt đầu dùng AI cho chủ shop nhỏ |
+| [seo-github](skills/seo-github/SKILL.md) | Check a public GitHub repo's discoverability: live homepage, brand topic, README link back to your site, license, CI | Kiểm SEO và quảng bá repo GitHub công khai |
 
 Every script is standard-library Python 3.8+, no install needed. Every skill works on its own; none of them calls a paid API.
 

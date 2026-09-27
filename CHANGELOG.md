@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.0 (2026-09-28)
+
+- 1 skill: seo-github (checks a public GitHub repo's homepage, brand topic, README backlink with UTM, license and CI via a real script, not a manual list; read-only, optional secret scan).
+- 14 skills in total.
+
 ## 1.2.0 (2026-09-27)
 
 - 2 skills: token-budget-guard (local token usage and cost report from Claude Code/API logs, cache hit rate, budget gate; never guesses prices), ai-kickstart-7-days (interview a small business owner, write and track a 7 day tailored AI plan).

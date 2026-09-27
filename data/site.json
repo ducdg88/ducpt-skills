@@ -186,6 +186,18 @@
         "Ngày 6 nhìn lại và sửa ngày yếu nhất",
         "Ngày 7 quyết định có tiếp tục"
       ]
+    },
+    "seo-github": {
+      "title": "Kiểm SEO và quảng bá repo GitHub",
+      "summary": "Kiểm bằng script thật: homepage repo có đặt và còn sống không, topics có gắn thương hiệu không, README có link về site kèm UTM không, cộng license và CI.",
+      "product": "course",
+      "steps_vi": [
+        "Đọc nhật ký bài học trước khi chạy",
+        "Chạy script kiểm một repo hoặc toàn bộ repo công khai",
+        "Đọc kết quả PASS, WARN, FAIL từng mục",
+        "Sửa chỗ FAIL bằng lệnh gh repo edit",
+        "Chạy lại script để xác nhận xanh thật"
+      ]
     }
   }
 }
