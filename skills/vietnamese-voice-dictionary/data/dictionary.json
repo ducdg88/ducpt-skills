@@ -1,0 +1,113 @@
+{
+  "phien_ban": 1,
+  "muc": [
+    {
+      "sai": "ghiếp H",
+      "dung": "GitHub",
+      "chac": true,
+      "so_lan": 1,
+      "lan_cuoi": "2026-09-27",
+      "nguon": "starter example",
+      "ghi_chu": ""
+    },
+    {
+      "sai": "ký thắp",
+      "dung": "GitHub",
+      "chac": true,
+      "so_lan": 1,
+      "lan_cuoi": "2026-09-27",
+      "nguon": "starter example",
+      "ghi_chu": ""
+    },
+    {
+      "sai": "sở kêu",
+      "dung": "skill",
+      "chac": true,
+      "so_lan": 1,
+      "lan_cuoi": "2026-09-27",
+      "nguon": "starter example",
+      "ghi_chu": ""
+    },
+    {
+      "sai": "xa kêu",
+      "dung": "skill",
+      "chac": true,
+      "so_lan": 1,
+      "lan_cuoi": "2026-09-27",
+      "nguon": "starter example",
+      "ghi_chu": ""
+    },
+    {
+      "sai": "sự kiểu",
+      "dung": "skill",
+      "chac": true,
+      "so_lan": 1,
+      "lan_cuoi": "2026-09-27",
+      "nguon": "starter example",
+      "ghi_chu": ""
+    },
+    {
+      "sai": "plackin",
+      "dung": "plugin",
+      "chac": true,
+      "so_lan": 1,
+      "lan_cuoi": "2026-09-27",
+      "nguon": "starter example",
+      "ghi_chu": ""
+    },
+    {
+      "sai": "plug gain",
+      "dung": "plugin",
+      "chac": true,
+      "so_lan": 1,
+      "lan_cuoi": "2026-09-27",
+      "nguon": "starter example",
+      "ghi_chu": ""
+    },
+    {
+      "sai": "mFSP",
+      "dung": "MCP",
+      "chac": true,
+      "so_lan": 1,
+      "lan_cuoi": "2026-09-27",
+      "nguon": "starter example",
+      "ghi_chu": ""
+    },
+    {
+      "sai": "con mít",
+      "dung": "commit",
+      "chac": true,
+      "so_lan": 1,
+      "lan_cuoi": "2026-09-27",
+      "nguon": "starter example",
+      "ghi_chu": "Only right when talking about code"
+    },
+    {
+      "sai": "SQL",
+      "dung": "skill",
+      "chac": false,
+      "so_lan": 1,
+      "lan_cuoi": "2026-09-27",
+      "nguon": "starter example",
+      "ghi_chu": "SQL is a real word, hint only"
+    },
+    {
+      "sai": "SCP",
+      "dung": "skill",
+      "chac": false,
+      "so_lan": 1,
+      "lan_cuoi": "2026-09-27",
+      "nguon": "starter example",
+      "ghi_chu": "SCP is a real word, hint only"
+    },
+    {
+      "sai": "SQ",
+      "dung": "skill",
+      "chac": false,
+      "so_lan": 1,
+      "lan_cuoi": "2026-09-27",
+      "nguon": "starter example",
+      "ghi_chu": "Too short, hint only"
+    }
+  ]
+}
