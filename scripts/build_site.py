@@ -145,8 +145,8 @@ def build(site):
         with open(os.path.join(out_root, name, "index.html"), "w", encoding="utf-8", newline="\n") as fh:
             fh.write(page(title, meta["summary"], url, body, ld, og))
 
-    hub_desc = (f"{len(skills)} Agent Skill mã nguồn mở của DUCPT cho người làm doanh nghiệp một người: "
-                "dựng đội AI, bản ghi và văn tiếng Việt, Pinterest, YouTube, sơ đồ tư duy, dọn file, phân phối skill.")
+    hub_desc = (f"{len(skills)} Agent Skill mã nguồn mở của DUCPT cho doanh nghiệp một người: dựng đội AI, "
+                "tiếng Việt, Pinterest, YouTube, sơ đồ tư duy, dọn file, giọng nói, kiểm nguyên bản.")
     hub_body = (
         '<section class="article-hero"><div class="article-hero-inner"><span class="article-kicker">Mã nguồn mở, miễn phí</span>'
         '<h1>Agent Skills của DUCPT</h1>'
@@ -180,8 +180,21 @@ def build(site):
             fh.write(sm)
 
     llms = os.path.join(site, "llms.txt")
-    with open(llms, encoding="utf-8") as fh:
-        lt = fh.read()
+    with open(llms, encoding="utf-8", newline="") as fh:
+        raw = fh.read()
+    nl = "\r\n" if "\r\n" in raw else "\n"  # giu nguyen kieu xuong dong cua file
+    lt = raw.replace("\r\n", "\n")
+    if "## Agent Skills" in lt:
+        # Muc da co: chi them dong cho skill moi (idempotent), khong dong vao dong cu.
+        missing = [s for s in skills if f"{BASE}/skills/{os.path.basename(s)}/" not in lt]
+        if missing:
+            add = "".join(f"- {cfg['skills'][os.path.basename(s)]['title']}: {BASE}/skills/{os.path.basename(s)}/\n"
+                          for s in missing)
+            head, _, tail = lt.partition("## Agent Skills")
+            body, sep, rest = tail.partition("\n## ")
+            lt = head + "## Agent Skills" + body.rstrip("\n") + "\n" + add + (("\n## " + rest) if sep else "")
+            with open(llms, "w", encoding="utf-8", newline=nl) as fh:
+                fh.write(lt)
     if "## Agent Skills" not in lt:
         section = ("\n## Agent Skills\n\n"
                    f"- Hub: {BASE}/skills/ (open source, MIT, repository {gh})\n"
@@ -190,7 +203,7 @@ def build(site):
                              for s in skills))
         lt = lt.replace("\n## Citation Guidance", section + "\n## Citation Guidance", 1) \
             if "\n## Citation Guidance" in lt else lt.rstrip("\n") + "\n" + section
-        with open(llms, "w", encoding="utf-8", newline="\n") as fh:
+        with open(llms, "w", encoding="utf-8", newline=nl) as fh:
             fh.write(lt)
     return urls, added
 

@@ -60,5 +60,60 @@ class VoiceDictionary(unittest.TestCase):
             self.assertNotIn("chi_claude", m)
 
 
+class BuildSiteLlms(unittest.TestCase):
+    """build_site.py must add missing skills to an existing llms.txt section and keep CRLF."""
+
+    def setUp(self):
+        import tempfile
+        self.bs = load("scripts/build_site.py", "build_site")
+        self.site = tempfile.mkdtemp()
+        with open(os.path.join(self.site, "sitemap.xml"), "w", encoding="utf-8", newline="") as fh:
+            fh.write('<?xml version="1.0"?><urlset></urlset>')
+
+    def write_llms(self, text):
+        with open(os.path.join(self.site, "llms.txt"), "w", encoding="utf-8", newline="") as fh:
+            fh.write(text)
+
+    def read_llms(self):
+        with open(os.path.join(self.site, "llms.txt"), encoding="utf-8", newline="") as fh:
+            return fh.read()
+
+    def old_section(self, nl):
+        old = ["github-commit-streak", "knowledge-mindmap", "one-person-company-ai"]
+        lines = ["# Site", "", "## Agent Skills", "", "- Hub: https://ducpt.com/skills/"]
+        lines += ["- x: https://ducpt.com/skills/%s/" % n for n in old]
+        lines += ["", "## Citation Guidance", "", "Cite the official page."]
+        return nl.join(lines) + nl
+
+    def test_adds_missing_skills_and_keeps_crlf(self):
+        self.write_llms(self.old_section("\r\n"))
+        self.bs.build(self.site)
+        text = self.read_llms()
+        for name in ("content-originality-check", "vietnamese-voice-dictionary", "youtube-title-lab"):
+            self.assertIn("https://ducpt.com/skills/%s/" % name, text)
+        self.assertEqual(text.count("\r\n"), text.count("\n"), "mixed line endings")
+        self.assertLess(text.index("skills/vietnamese-voice-dictionary/"), text.index("## Citation Guidance"))
+
+    def test_second_run_changes_nothing(self):
+        self.write_llms(self.old_section("\n"))
+        self.bs.build(self.site)
+        first = self.read_llms()
+        self.bs.build(self.site)
+        self.assertEqual(self.read_llms(), first)
+        self.assertNotIn("\r", first)
+
+
+class SeoLengths(unittest.TestCase):
+    def test_titles_and_descriptions_fit_search_results(self):
+        import json
+        with open(os.path.join(ROOT, "data", "site.json"), encoding="utf-8") as fh:
+            cfg = json.load(fh)
+        suffix = " · Agent Skill miễn phí · DUCPT"
+        for name, meta in cfg["skills"].items():
+            self.assertLessEqual(len(meta["title"] + suffix), 65, name)
+            self.assertLessEqual(len(meta["summary"]), 165, name)
+            self.assertGreaterEqual(len(meta["summary"]), 110, name)
+
+
 if __name__ == "__main__":
     unittest.main()
