@@ -19,6 +19,8 @@ Skill pages: https://ducpt.com/skills/
 - [github-commit-streak](https://github.com/ducdg88/ducpt-skills/blob/main/skills/github-commit-streak/SKILL.md): GitHub contribution streak and goal pace.
 - [vietnamese-voice-dictionary](https://github.com/ducdg88/ducpt-skills/blob/main/skills/vietnamese-voice-dictionary/SKILL.md): persistent dictionary that fixes misheard Vietnamese dictation of technical words.
 - [content-originality-check](https://github.com/ducdg88/ducpt-skills/blob/main/skills/content-originality-check/SKILL.md): score video and channel risk of inauthentic or mass-produced content before publishing.
+- [token-budget-guard](https://github.com/ducdg88/ducpt-skills/blob/main/skills/token-budget-guard/SKILL.md): local token usage and cost report, warn before over budget.
+- [ai-kickstart-7-days](https://github.com/ducdg88/ducpt-skills/blob/main/skills/ai-kickstart-7-days/SKILL.md): 7 day tailored AI plan for a small business owner, with progress tracking.
 
 ## Related products by DUCPT
 

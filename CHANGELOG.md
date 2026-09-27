@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.0 (2026-09-27)
+
+- 2 skills: token-budget-guard (local token usage and cost report from Claude Code/API logs, cache hit rate, budget gate; never guesses prices), ai-kickstart-7-days (interview a small business owner, write and track a 7 day tailored AI plan).
+- 13 skills in total.
+
 ## 1.1.0 (2026-09-27)
 
 - 2 skills: vietnamese-voice-dictionary (persistent correction dictionary for misheard Vietnamese dictation, optional Claude Code hook), content-originality-check (risk score for inauthentic or mass-produced content, with a title templating script).

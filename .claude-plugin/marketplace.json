@@ -4,8 +4,8 @@
     "name": "DUCPT"
   },
   "metadata": {
-    "description": "Agent Skills for one-person companies: AI team setup, Vietnamese transcripts and copy, Pinterest pins, YouTube titles, knowledge maps, file cleanup, skill distribution, GitHub streaks, voice dictation fixes and content originality checks.",
-    "version": "1.1.0"
+    "description": "Agent Skills for one-person companies: AI team setup, Vietnamese transcripts and copy, Pinterest pins, YouTube titles, knowledge maps, file cleanup, skill distribution, GitHub streaks, voice dictation fixes and content originality checks, local token cost tracking and a 7 day AI kickstart plan.",
+    "version": "1.2.0"
   },
   "plugins": [
     {
@@ -24,7 +24,9 @@
         "./skills/skill-distribution-kit",
         "./skills/github-commit-streak",
         "./skills/vietnamese-voice-dictionary",
-        "./skills/content-originality-check"
+        "./skills/content-originality-check",
+        "./skills/token-budget-guard",
+        "./skills/ai-kickstart-7-days"
       ],
       "homepage": "https://ducpt.com/skills/",
       "license": "MIT",

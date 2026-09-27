@@ -1,0 +1,9 @@
+{
+  "_comment": "EXAMPLE ONLY, not real prices. Copy to prices.json and fill in numbers you read yourself from the provider's current pricing page (Step 0 in SKILL.md). USD per 1,000,000 tokens.",
+  "example-model-name": {
+    "input": 0.0,
+    "output": 0.0,
+    "cache_write": 0.0,
+    "cache_read": 0.0
+  }
+}
