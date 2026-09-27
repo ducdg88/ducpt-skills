@@ -2,7 +2,9 @@
 
 ![DUCPT Skills](docs/cover.png)
 
-![skills](https://img.shields.io/badge/skills-13-blue) ![license](https://img.shields.io/badge/license-MIT-green)
+![CI](https://github.com/ducdg88/ducpt-skills/actions/workflows/validate.yml/badge.svg) ![skills](https://img.shields.io/badge/skills-13-blue) ![license](https://img.shields.io/badge/license-MIT-green)
+
+**Point an AI agent at a real one-person-company job → get one skill that does it the way someone who has shipped this before would.**
 
 Thirteen practical [Agent Skills](https://agentskills.io) for Claude Code, Claude, Codex, Cursor, Gemini CLI and any agent that reads `SKILL.md`. Built by [DUCPT](https://ducpt.com/?utm_source=github&utm_medium=readme&utm_campaign=ducpt-skills) for solo founders and small teams who run their business with AI, with first-class support for Vietnamese content.
 
