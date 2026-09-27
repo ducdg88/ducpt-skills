@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.0 (2026-09-27)
+
+- 2 skills: vietnamese-voice-dictionary (persistent correction dictionary for misheard Vietnamese dictation, optional Claude Code hook), content-originality-check (risk score for inauthentic or mass-produced content, with a title templating script).
+- 11 skills in total.
+
 ## 1.0.0 (2026-09-26)
 
 - 9 skills: one-person-company-ai, vietnamese-transcript-cleaner, vietnamese-copy-polish, pinterest-pin-writer, youtube-title-lab, knowledge-mindmap, windows-duplicate-cleanup, skill-distribution-kit, github-commit-streak.

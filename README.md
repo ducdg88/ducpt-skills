@@ -2,11 +2,11 @@
 
 ![DUCPT Skills](docs/cover.png)
 
-![skills](https://img.shields.io/badge/skills-9-blue) ![license](https://img.shields.io/badge/license-MIT-green)
+![skills](https://img.shields.io/badge/skills-11-blue) ![license](https://img.shields.io/badge/license-MIT-green)
 
-Nine practical [Agent Skills](https://agentskills.io) for Claude Code, Claude, Codex, Cursor, Gemini CLI and any agent that reads `SKILL.md`. Built by [DUCPT](https://ducpt.com/?utm_source=github&utm_medium=readme&utm_campaign=ducpt-skills) for solo founders and small teams who run their business with AI, with first-class support for Vietnamese content.
+Eleven practical [Agent Skills](https://agentskills.io) for Claude Code, Claude, Codex, Cursor, Gemini CLI and any agent that reads `SKILL.md`. Built by [DUCPT](https://ducpt.com/?utm_source=github&utm_medium=readme&utm_campaign=ducpt-skills) for solo founders and small teams who run their business with AI, with first-class support for Vietnamese content.
 
-Bộ 9 skill cho AI agent, dành cho người làm **doanh nghiệp một người**: dựng đội AI, làm sạch bản ghi tiếng Việt, chuốt văn, viết pin Pinterest, đặt tiêu đề YouTube, làm sơ đồ tư duy, dọn file trùng, phân phối skill và giữ chuỗi commit GitHub.
+Bộ 11 skill cho AI agent, dành cho người làm **doanh nghiệp một người**: dựng đội AI, làm sạch bản ghi tiếng Việt, chuốt văn, viết pin Pinterest, đặt tiêu đề YouTube, làm sơ đồ tư duy, dọn file trùng, phân phối skill và giữ chuỗi commit GitHub, sửa lỗi nghe nhầm của giọng nói và chấm rủi ro nội dung không nguyên bản.
 
 ## Install
 
@@ -34,6 +34,8 @@ Manual: copy any folder from `skills/` into `~/.claude/skills/` (Claude Code) or
 | [windows-duplicate-cleanup](skills/windows-duplicate-cleanup/SKILL.md) | Hash-based duplicate finder, dry run first, quarantine instead of delete | Tìm và dọn file trùng an toàn |
 | [skill-distribution-kit](skills/skill-distribution-kit/SKILL.md) | Package expertise as a skill, validate to spec, publish to registries, measure | Đóng gói và phân phối skill |
 | [github-commit-streak](skills/github-commit-streak/SKILL.md) | Streak and goal pace from the GitHub API, why commits do not count | Giữ chuỗi xanh commit mỗi ngày |
+| [vietnamese-voice-dictionary](skills/vietnamese-voice-dictionary/SKILL.md) | Persistent dictionary that fixes misheard Vietnamese dictation of technical words and learns from corrections | Sửa lỗi nghe nhầm giọng nói, nhớ từ đã sửa |
+| [content-originality-check](skills/content-originality-check/SKILL.md) | Score a video or channel for inauthentic or mass-produced content risk against published platform criteria | Chấm rủi ro nội dung không nguyên bản trước khi đăng |
 
 Every script is standard-library Python 3.8+, no install needed. Every skill works on its own; none of them calls a paid API.
 

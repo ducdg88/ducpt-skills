@@ -17,6 +17,8 @@ Skill pages: https://ducpt.com/skills/
 - [windows-duplicate-cleanup](https://github.com/ducdg88/ducpt-skills/blob/main/skills/windows-duplicate-cleanup/SKILL.md): safe hash-based duplicate file cleanup with quarantine.
 - [skill-distribution-kit](https://github.com/ducdg88/ducpt-skills/blob/main/skills/skill-distribution-kit/SKILL.md): package, validate, publish and measure agent skills.
 - [github-commit-streak](https://github.com/ducdg88/ducpt-skills/blob/main/skills/github-commit-streak/SKILL.md): GitHub contribution streak and goal pace.
+- [vietnamese-voice-dictionary](https://github.com/ducdg88/ducpt-skills/blob/main/skills/vietnamese-voice-dictionary/SKILL.md): persistent dictionary that fixes misheard Vietnamese dictation of technical words.
+- [content-originality-check](https://github.com/ducdg88/ducpt-skills/blob/main/skills/content-originality-check/SKILL.md): score video and channel risk of inauthentic or mass-produced content before publishing.
 
 ## Related products by DUCPT
 
