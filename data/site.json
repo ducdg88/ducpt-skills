@@ -35,7 +35,7 @@
   },
   "skills": {
     "one-person-company-ai": {
-      "title": "Dựng công ty một người chạy bằng AI",
+      "title": "Dựng công ty một người bằng AI",
       "summary": "Biến việc lặp lại hằng tuần thành sơ đồ vai trò AI agent, luật phiếu việc, vòng làm việc mỗi ngày, cổng duyệt và bảng KPI. Founder chỉ còn việc duyệt.",
       "product": "course",
       "steps_vi": [
@@ -48,7 +48,7 @@
       ]
     },
     "vietnamese-transcript-cleaner": {
-      "title": "Làm sạch bản ghi và phụ đề tiếng Việt",
+      "title": "Làm sạch bản ghi tiếng Việt",
       "summary": "Gộp file SRT, VTT hoặc bản chép lời tự động thành đoạn văn dễ đọc, khôi phục dấu, thêm dấu câu, gắn người nói, rồi tóm tắt quyết định và việc cần làm.",
       "product": "verba",
       "steps_vi": [
@@ -59,7 +59,7 @@
       ]
     },
     "vietnamese-copy-polish": {
-      "title": "Chuốt văn tiếng Việt cho từng nền tảng",
+      "title": "Chuốt văn tiếng Việt cho nền tảng",
       "summary": "Soát bài đăng bằng script: dấu gạch dài, câu quá dài, thiếu dấu, thiếu lời kêu gọi, độ dài theo nền tảng. Sau đó viết lại cho tự nhiên như người Việt viết.",
       "product": "services",
       "steps_vi": [
@@ -140,8 +140,8 @@
       ]
     },
     "vietnamese-voice-dictionary": {
-      "title": "Từ điển sửa lỗi giọng nói tiếng Việt",
-      "summary": "Nói vào micro mà máy nghe sai từ kỹ thuật (ghiếp H thành GitHub, sở kêu thành skill)? Skill giữ một từ điển ghi nhớ: bạn sửa một lần, lần sau tự sửa đúng. Từ dễ nhầm với từ thật chỉ được gợi ý, không tự sửa.",
+      "title": "Từ điển sửa lỗi giọng nói",
+      "summary": "Máy nghe sai từ kỹ thuật khi bạn nói (ghiếp H thành GitHub, sở kêu thành skill)? Skill nhớ từ bạn đã sửa và lần sau tự sửa đúng. Từ dễ nhầm với từ thật chỉ gợi ý.",
       "product": "verba",
       "steps_vi": [
         "Chạy từ điển trên tin nhắn nghe sai",
@@ -152,8 +152,8 @@
       ]
     },
     "content-originality-check": {
-      "title": "Chấm rủi ro nội dung không nguyên bản",
-      "summary": "Chấm từng video theo tiêu chí công khai của YouTube, Facebook, TikTok trước khi đăng, đo độ lặp khuôn tiêu đề của kênh và chỉ ra 3 việc sửa cụ thể. Chỉ là ước tính, nền tảng mới là bên quyết định.",
+      "title": "Kiểm nguyên bản nội dung",
+      "summary": "Chấm video theo tiêu chí công khai của YouTube, Facebook, TikTok trước khi đăng, đo độ lặp khuôn tiêu đề, chỉ ra 3 việc sửa. Chỉ là ước tính, nền tảng quyết định.",
       "product": "course",
       "steps_vi": [
         "Đọc lại tiêu chí chính thức hiện hành",
