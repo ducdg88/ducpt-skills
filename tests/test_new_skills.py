@@ -103,6 +103,40 @@ class BuildSiteLlms(unittest.TestCase):
         self.assertNotIn("\r", first)
 
 
+class CheckRepoLinks(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.cr = load("scripts/check_repo.py", "check_repo")
+
+    def test_template_urls_are_not_links(self):
+        self.assertTrue(self.cr.TEMPLATE_RE.search("https://ducpt.com/skills/%s/"))
+        self.assertTrue(self.cr.TEMPLATE_RE.search("https://ducpt.com/skills/{name}/"))
+        self.assertFalse(self.cr.TEMPLATE_RE.search("https://ducpt.com/skills/github-commit-streak/"))
+
+    def test_repo_homepage_is_empty_when_gh_is_missing(self):
+        real = self.cr.subprocess.run
+
+        def boom(*args, **kwargs):
+            raise OSError("gh not installed")
+        self.cr.subprocess.run = boom
+        try:
+            self.assertEqual(self.cr.repo_homepage(), "")
+        finally:
+            self.cr.subprocess.run = real
+
+    def test_repo_homepage_reads_gh_output(self):
+        real = self.cr.subprocess.run
+
+        class Done:
+            returncode = 0
+            stdout = "https://ducpt.com\n"
+        self.cr.subprocess.run = lambda *a, **k: Done()
+        try:
+            self.assertEqual(self.cr.repo_homepage(), "https://ducpt.com")
+        finally:
+            self.cr.subprocess.run = real
+
+
 class SeoLengths(unittest.TestCase):
     def test_titles_and_descriptions_fit_search_results(self):
         import json
