@@ -19,16 +19,25 @@ Mục tiêu: skill mở mã nguồn trở thành kênh phân phối tự chạy,
 
 ## Nhịp hằng ngày
 
-- 21:30 máy tự chạy `scripts/daily_snapshot.py --push`: lưu traffic thật, chuỗi contribution, cập nhật STATS.md, commit và đẩy lên. Không có số mới thì không commit.
-- Mỗi việc thật xong (sửa lỗi, thêm ví dụ, thêm skill) là một commit nhỏ, email đã gắn tài khoản.
+- 07:15 automation Nhịp Việc `github_daily_snapshot` chạy `scripts/daily_snapshot.py --push`: ngày GitHub (UTC) vừa chốt lúc 07:00, lưu traffic thật, chuỗi contribution, bảng KPI 100/ngày vào STATS.md, commit chỉ `data/` và `STATS.md` trong worktree tạm ở origin/main, đẩy lên main. Không có số mới thì không commit.
+- 22:00 automation `github_so_tam_22h` chạy `--provisional`: chỉ đọc số tạm của ngày đang mở, cảnh báo khi dưới 60. Không ghi, không commit.
+- Mỗi việc thật xong (sửa lỗi, thêm ví dụ, thêm skill) đi theo quy trình PR trong `AGENTS.md`: issue trước, commit nhỏ thật, merge rebase.
+- Lịch Windows cũ "DUCPT Skills daily snapshot" (21:30) đã tắt ngày 29/09/2026.
 
-## Toán 10.000 contribution
+## Toán 100 contribution mỗi ngày
 
-Tính đến 26/09/2026: 101 contribution trong 365 ngày, chuỗi hiện tại 3 ngày. Muốn đủ 10.000 trong 12 tháng cần khoảng 27 mỗi ngày. Nhịp snapshot tự động chỉ góp 1 mỗi ngày; phần còn lại phải đến từ việc thật được commit nhỏ, đúng email.
+Chốt 29/09/2026 (spec nội bộ NV-82, Founder duyệt Q1 đến Q5):
+
+- KPI chính: trung bình 7 ngày đã chốt từ 100 trở lên và 0 ngày trống. Đo bằng `python skills/github-commit-streak/scripts/streak.py --per-day 100`, đọc sau 07:15 giờ Việt Nam.
+- Nguồn: khoảng 14 ticket code thật mỗi ngày, mỗi ticket khoảng 7 contribution (1 issue, khoảng 5 commit nhỏ, 1 PR). Snapshot chỉ góp 1.
+- Lộ trình sàn: 29/09 tới 05/10 là 40, 06/10 tới 12/10 là 60, 13/10 tới 19/10 là 80, 20/10 tới 28/10 là 100.
+- Lúc duyệt: trung bình 7 ngày 30,9, chưa ngày nào đạt 100, cao nhất 88 (27/09).
+- Không đạt thì chấp nhận không đạt. Không bù bằng việc giả.
 
 ## Luật không đổi
 
-- Không commit rỗng, không sửa ngày commit.
+- Không commit rỗng, không sửa ngày commit (CI chặn bằng `scripts/check_commits.py`).
+- Không tách một thay đổi thành nhiều commit giả, không nhân bản một thay đổi ra nhiều repo để lấy số, không mở issue hay PR không gắn việc thật.
 - Mỗi skill nhắc sản phẩm tối đa một lần, chỉ khi phù hợp.
 - Không đưa nội dung khóa học của người khác vào skill công khai.
 - Mọi link ra ngoài gắn `utm_source`.
