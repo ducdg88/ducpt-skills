@@ -238,6 +238,25 @@ class DailySnapshot(unittest.TestCase):
             self.mod.snapshot(self.mod.argparse.Namespace(push=True, ref="feature", dry_run=False))
 
 
+class CheckCommits(unittest.TestCase):
+    def setUp(self):
+        path = os.path.join(ROOT, "scripts", "check_commits.py")
+        spec = importlib.util.spec_from_file_location("check_commits", path)
+        self.mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(self.mod)
+
+    def test_empty_commit_fails(self):
+        self.assertEqual(self.mod.problems("a", "Docs\n", "", 1), ["empty commit (changes no file)"])
+
+    def test_literal_backslash_n_fails(self):
+        msg = r"Docs: README\n\nCo-Authored-By: x" + "\n"
+        self.assertEqual(len(self.mod.problems("a", msg, "README.md\n", 1)), 1)
+
+    def test_real_commit_and_merge_pass(self):
+        self.assertEqual(self.mod.problems("a", "Fix\n\nBody\n", "a.py\n", 1), [])
+        self.assertEqual(self.mod.problems("a", "Merge\n", "", 2), [])
+
+
 class Validator(unittest.TestCase):
     def setUp(self):
         self.mod = load("skill-distribution-kit", "validate_skill.py")
