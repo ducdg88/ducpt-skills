@@ -256,6 +256,14 @@ class CheckCommits(unittest.TestCase):
         self.assertEqual(self.mod.problems("a", "Fix\n\nBody\n", "a.py\n", 1), [])
         self.assertEqual(self.mod.problems("a", "Merge\n", "", 2), [])
 
+    def test_force_push_base_falls_back(self):
+        # After a force push GitHub's `before` is a commit the checkout does not have.
+        gone = "1" * 40
+        with redirect_stdout(io.StringIO()) as out:
+            self.assertEqual(self.mod.resolve(f"{gone}..HEAD", fallback="HEAD~1"), "HEAD~1..HEAD")
+        self.assertIn("is gone", out.getvalue())
+        self.assertEqual(self.mod.resolve("HEAD~1..HEAD"), "HEAD~1..HEAD")
+
 
 class Validator(unittest.TestCase):
     def setUp(self):
