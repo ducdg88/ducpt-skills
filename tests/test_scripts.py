@@ -178,6 +178,32 @@ class Streak(unittest.TestCase):
         current, longest, zero30, _ = self.mod.streaks(self.days([1, 1, 1, 1, 0, 1, 1], today), today)
         self.assertEqual((current, longest, zero30), (2, 4, 1))
 
+    def test_per_day_uses_closed_days_only(self):
+        today = self.dt.date(2026, 9, 29)
+        counts = [0] * 23 + [17, 13, 9, 34, 52, 88, 73, 120, 5]
+        d = self.mod.per_day(self.days(counts, today), today, 100)
+        self.assertEqual(d["today_provisional"], 5)
+        self.assertEqual([x["count"] for x in d["last_7"]], [13, 9, 34, 52, 88, 73, 120])
+        self.assertEqual(d["avg_7"], 55.6)
+        self.assertEqual(d["days_at_target_30"], 1)
+        self.assertEqual(d["zero_days_7"], 0)
+        self.assertEqual(d["zero_days_30"], 22)
+        self.assertEqual(d["window_30"], ["2026-08-30", "2026-09-28"])
+
+    def test_needed_per_day_ignores_contributions_that_slide_out(self):
+        today = self.dt.date(2026, 9, 28)
+        by = self.dt.date(2027, 9, 28)
+        days = self.days([500] + [0] * 364, today)  # all of it will leave the window
+        self.assertEqual(self.mod.needed_per_day(days, today, 36500, by), 100.0)
+        near = self.dt.date(2026, 10, 8)  # 10 days out: last year's work mostly still counts
+        days = self.days([10] * 365, today)
+        self.assertEqual(self.mod.needed_per_day(days, today, 3650, near), 10.0)
+
+    def test_avg_per_day_starts_at_account_creation(self):
+        today = self.dt.date(2026, 9, 28)
+        self.assertEqual(self.mod.avg_per_day(238, today, self.dt.date(2026, 2, 3)), 1.0)
+        self.assertEqual(self.mod.avg_per_day(365, today, self.dt.date(2020, 1, 1)), 1.0)
+
 
 class Validator(unittest.TestCase):
     def setUp(self):
