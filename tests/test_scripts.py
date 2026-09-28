@@ -205,6 +205,39 @@ class Streak(unittest.TestCase):
         self.assertEqual(self.mod.avg_per_day(365, today, self.dt.date(2020, 1, 1)), 1.0)
 
 
+class DailySnapshot(unittest.TestCase):
+    def setUp(self):
+        path = os.path.join(ROOT, "scripts", "daily_snapshot.py")
+        spec = importlib.util.spec_from_file_location("daily_snapshot", path)
+        self.mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(self.mod)
+        self.tmp = tempfile.mkdtemp()
+
+    def tearDown(self):
+        shutil.rmtree(self.tmp, ignore_errors=True)
+
+    def test_stats_has_daily_target_table(self):
+        daily = {"target": 100, "last_7": [{"date": "2026-09-27", "count": 88},
+                                           {"date": "2026-09-28", "count": 120}],
+                 "avg_7": 104.0, "avg_30": 20.0, "days_at_target_30": 1,
+                 "zero_days_7": 0, "zero_days_30": 20, "by_type_30": {"commits": 180, "issues": 0}}
+        streak = {"last_year_total": 700, "private_hidden": 0, "current_streak": 9, "longest_streak": 9,
+                  "zero_days_last_30": 20, "goal": 10000, "goal_date": "2027-09-28",
+                  "needed_per_day": 27.4, "per_day": daily}
+        self.mod.write_stats(self.tmp, [], streak, "2026-09-29")
+        with open(os.path.join(self.tmp, "STATS.md"), encoding="utf-8") as fh:
+            text = fh.read()
+        self.assertIn("## Daily target: 100 contributions", text)
+        self.assertIn("| 2026-09-27 | 88 | no |", text)
+        self.assertIn("| 2026-09-28 | 120 | yes |", text)
+        self.assertIn("| Average, last 7 days | 104.0 |", text)
+        self.assertIn("commits 180, issues 0", text)
+
+    def test_push_refused_off_main(self):
+        with self.assertRaises(SystemExit):
+            self.mod.snapshot(self.mod.argparse.Namespace(push=True, ref="feature", dry_run=False))
+
+
 class Validator(unittest.TestCase):
     def setUp(self):
         self.mod = load("skill-distribution-kit", "validate_skill.py")
