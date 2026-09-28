@@ -1,3 +1,5 @@
+[🇻🇳 Tiếng Việt](README.vi.md) · **🇬🇧 English**
+
 # DUCPT Skills: Agent Skills for one-person companies
 
 ![DUCPT Skills](docs/cover.png)
