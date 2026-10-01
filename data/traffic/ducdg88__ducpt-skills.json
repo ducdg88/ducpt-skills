@@ -85,29 +85,33 @@
       "views": 0
     },
     "2026-09-27": {
-      "clones": 0,
-      "unique_clones": 0,
-      "unique_views": 0,
-      "views": 0
+      "clones": 106,
+      "unique_clones": 57,
+      "unique_views": 1,
+      "views": 1
     },
     "2026-09-28": {
-      "clones": 0,
-      "unique_clones": 0,
-      "unique_views": 0,
-      "views": 0
+      "clones": 168,
+      "unique_clones": 84,
+      "unique_views": 10,
+      "views": 11
     },
     "2026-09-29": {
-      "clones": 0,
-      "unique_clones": 0,
-      "unique_views": 0,
-      "views": 0
+      "clones": 79,
+      "unique_clones": 46,
+      "unique_views": 1,
+      "views": 1
     }
   },
   "referrers": {
     "2026-09-26": {},
     "2026-09-27": {},
     "2026-09-28": {},
-    "2026-09-29": {}
+    "2026-09-29": {},
+    "2026-10-01": {
+      "ducpt.com": 1,
+      "github.com": 10
+    }
   },
   "repo": "ducdg88/ducpt-skills"
 }

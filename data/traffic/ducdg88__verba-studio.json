@@ -83,13 +83,52 @@
       "unique_clones": 0,
       "unique_views": 0,
       "views": 0
+    },
+    "2026-09-24": {
+      "clones": 2,
+      "unique_clones": 2,
+      "unique_views": 0,
+      "views": 0
+    },
+    "2026-09-25": {
+      "clones": 0,
+      "unique_clones": 0,
+      "unique_views": 0,
+      "views": 0
+    },
+    "2026-09-26": {
+      "clones": 1,
+      "unique_clones": 1,
+      "unique_views": 0,
+      "views": 0
+    },
+    "2026-09-27": {
+      "clones": 39,
+      "unique_clones": 23,
+      "unique_views": 0,
+      "views": 0
+    },
+    "2026-09-28": {
+      "clones": 18,
+      "unique_clones": 9,
+      "unique_views": 6,
+      "views": 7
+    },
+    "2026-09-29": {
+      "clones": 0,
+      "unique_clones": 0,
+      "unique_views": 1,
+      "views": 1
     }
   },
   "referrers": {
     "2026-09-26": {},
     "2026-09-27": {},
     "2026-09-28": {},
-    "2026-09-29": {}
+    "2026-09-29": {},
+    "2026-10-01": {
+      "github.com": 7
+    }
   },
   "repo": "ducdg88/verba-studio"
 }

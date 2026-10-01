@@ -83,13 +83,52 @@
       "unique_clones": 0,
       "unique_views": 0,
       "views": 0
+    },
+    "2026-09-24": {
+      "clones": 0,
+      "unique_clones": 0,
+      "unique_views": 0,
+      "views": 0
+    },
+    "2026-09-25": {
+      "clones": 0,
+      "unique_clones": 0,
+      "unique_views": 0,
+      "views": 0
+    },
+    "2026-09-26": {
+      "clones": 3,
+      "unique_clones": 3,
+      "unique_views": 1,
+      "views": 1
+    },
+    "2026-09-27": {
+      "clones": 61,
+      "unique_clones": 33,
+      "unique_views": 0,
+      "views": 0
+    },
+    "2026-09-28": {
+      "clones": 40,
+      "unique_clones": 19,
+      "unique_views": 7,
+      "views": 7
+    },
+    "2026-09-29": {
+      "clones": 5,
+      "unique_clones": 5,
+      "unique_views": 0,
+      "views": 0
     }
   },
   "referrers": {
     "2026-09-26": {},
     "2026-09-27": {},
     "2026-09-28": {},
-    "2026-09-29": {}
+    "2026-09-29": {},
+    "2026-10-01": {
+      "github.com": 8
+    }
   },
   "repo": "ducdg88/farm-assistant-dg"
 }
