@@ -137,6 +137,12 @@
       "unique_clones": 0,
       "unique_views": 1,
       "views": 1
+    },
+    "2026-10-03": {
+      "clones": 1,
+      "unique_clones": 1,
+      "unique_views": 1,
+      "views": 1
     }
   },
   "referrers": {
@@ -176,6 +182,11 @@
     },
     "2026-10-04": {
       "ducpt.com": 1,
+      "github.com": 11,
+      "youtube.com": 4
+    },
+    "2026-10-05": {
+      "ducpt.com": 2,
       "github.com": 11,
       "youtube.com": 4
     }
