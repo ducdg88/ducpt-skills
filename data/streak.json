@@ -563,12 +563,12 @@
   },
   "2026-10-08": {
     "avg_per_day": 9.2,
-    "current_streak": 17,
+    "current_streak": 18,
     "date": "2026-10-08",
     "goal": 10000,
     "goal_date": "2027-10-08",
-    "last_year_total": 2288,
-    "longest_streak": 17,
+    "last_year_total": 2289,
+    "longest_streak": 18,
     "needed_per_day": 27.4,
     "per_day": {
       "avg_30": 64.2,
@@ -613,7 +613,7 @@
         }
       ],
       "target": 100,
-      "today_provisional": 0,
+      "today_provisional": 1,
       "window_30": [
         "2026-09-08",
         "2026-10-07"
@@ -622,8 +622,8 @@
       "zero_days_7": 0
     },
     "private_hidden": 0,
-    "today": 0,
+    "today": 1,
     "user": "ducdg88",
-    "zero_days_last_30": 12
+    "zero_days_last_30": 11
   }
 }
