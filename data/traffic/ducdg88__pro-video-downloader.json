@@ -287,6 +287,12 @@
       "unique_clones": 0,
       "unique_views": 2,
       "views": 3
+    },
+    "2026-10-28": {
+      "clones": 0,
+      "unique_clones": 0,
+      "unique_views": 1,
+      "views": 3
     }
   },
   "referrers": {
@@ -467,6 +473,11 @@
       "ducpt.com": 9,
       "github.com": 2,
       "youtube.com": 4
+    },
+    "2026-10-30": {
+      "ducpt.com": 9,
+      "github.com": 3,
+      "youtube.com": 5
     }
   },
   "repo": "ducdg88/pro-video-downloader"
