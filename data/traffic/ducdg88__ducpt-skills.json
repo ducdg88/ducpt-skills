@@ -401,6 +401,12 @@
       "unique_clones": 7,
       "unique_views": 0,
       "views": 0
+    },
+    "2026-11-19": {
+      "clones": 20,
+      "unique_clones": 15,
+      "unique_views": 1,
+      "views": 1
     }
   },
   "referrers": {
@@ -623,6 +629,10 @@
       "github.com": 6
     },
     "2026-11-20": {
+      "ducpt.com": 6,
+      "github.com": 6
+    },
+    "2026-11-21": {
       "ducpt.com": 6,
       "github.com": 6
     }
