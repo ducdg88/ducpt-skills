@@ -407,6 +407,18 @@
       "unique_clones": 15,
       "unique_views": 1,
       "views": 1
+    },
+    "2026-11-20": {
+      "clones": 15,
+      "unique_clones": 10,
+      "unique_views": 1,
+      "views": 2
+    },
+    "2026-11-21": {
+      "clones": 11,
+      "unique_clones": 10,
+      "unique_views": 0,
+      "views": 0
     }
   },
   "referrers": {
@@ -639,6 +651,10 @@
     "2026-11-22": {
       "ducpt.com": 6,
       "github.com": 6
+    },
+    "2026-11-23": {
+      "ducpt.com": 6,
+      "github.com": 4
     }
   },
   "repo": "ducdg88/ducpt-skills"
