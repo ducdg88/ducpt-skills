@@ -3557,7 +3557,7 @@
     "date": "2026-11-23",
     "goal": 10000,
     "goal_date": "2027-11-23",
-    "last_year_total": 8917,
+    "last_year_total": 8918,
     "longest_streak": 64,
     "needed_per_day": 27.4,
     "per_day": {
@@ -3603,7 +3603,7 @@
         }
       ],
       "target": 100,
-      "today_provisional": 11,
+      "today_provisional": 12,
       "window_30": [
         "2026-10-24",
         "2026-11-22"
@@ -3612,7 +3612,7 @@
       "zero_days_7": 0
     },
     "private_hidden": 0,
-    "today": 11,
+    "today": 12,
     "user": "ducdg88",
     "zero_days_last_30": 0
   }
