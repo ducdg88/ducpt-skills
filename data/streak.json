@@ -3745,5 +3745,70 @@
     "today": 16,
     "user": "ducdg88",
     "zero_days_last_30": 0
+  },
+  "2026-11-26": {
+    "avg_per_day": 30.8,
+    "current_streak": 67,
+    "date": "2026-11-26",
+    "goal": 10000,
+    "goal_date": "2027-11-26",
+    "last_year_total": 9161,
+    "longest_streak": 67,
+    "needed_per_day": 27.4,
+    "per_day": {
+      "avg_30": 130.6,
+      "avg_7": 159.6,
+      "by_type_30": {
+        "commits": 3905,
+        "issues": 0,
+        "private_hidden": 0,
+        "pull_requests": 1,
+        "repositories": 11,
+        "reviews": 0
+      },
+      "days_at_target_30": 13,
+      "last_7": [
+        {
+          "count": 321,
+          "date": "2026-11-19"
+        },
+        {
+          "count": 187,
+          "date": "2026-11-20"
+        },
+        {
+          "count": 56,
+          "date": "2026-11-21"
+        },
+        {
+          "count": 307,
+          "date": "2026-11-22"
+        },
+        {
+          "count": 178,
+          "date": "2026-11-23"
+        },
+        {
+          "count": 24,
+          "date": "2026-11-24"
+        },
+        {
+          "count": 44,
+          "date": "2026-11-25"
+        }
+      ],
+      "target": 100,
+      "today_provisional": 8,
+      "window_30": [
+        "2026-10-27",
+        "2026-11-25"
+      ],
+      "zero_days_30": 0,
+      "zero_days_7": 0
+    },
+    "private_hidden": 0,
+    "today": 8,
+    "user": "ducdg88",
+    "zero_days_last_30": 0
   }
 }
